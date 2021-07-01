@@ -131,6 +131,5 @@ if __name__ == "__main__":
     print("Reading sequence files...")
     seq = Sequence(filepath=TRAINING_PATH)
     seqs = Sequence(filepath=TESTING_PATH, type="test")
-    seq.extract()
     for txt in os.listdir(seqs.filepath):
         seqs.extract_single_txt(txt)
